@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase - Newcastle College Games Department</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Newcastle College Games</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Homepage</a></li>
+                <li class="dropdown">
+                    <a href="courses.html">Courses</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="level2.html">Games Development - Level 2</a></li>
+                        <li><a href="level3.html">Games Development - Level 3</a></li>
+                        <li><a href="level5.html">FdSc Games Design and Development</a></li>
+                        <li><a href="level6.html">BSc (Hons) Games Technologies</a></li>
+                        <li><a href="level7.html">MSc Games Design and Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h2>Student Showcase</h2>
+            <p>Explore the amazing work created by our students. From concept art to fully playable games, see what our talented developers have achieved.</p>
+            
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="assets/images/img 4.jpeg" alt="Student Work 1">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/img 8.jpg" alt="Student Work 2">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/img 3.jpeg" alt="Student Work 3">
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+
+            <div class="video-showcase">
+                <h3>Gameplay Videos</h3>
+                <div class="video-grid">
+                    <video controls>
+                        <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls>
+                        <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Newcastle College Games Department</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
